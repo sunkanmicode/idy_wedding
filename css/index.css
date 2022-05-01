@@ -1,0 +1,131 @@
+:root{
+  --pri-clr1: #974ec3;
+  --pri-clr2: #63d2db;
+}
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+    font-size: 15pt;
+}
+#home{
+  background:radial-gradient(rgba(0, 0, 0, 0.5), #CC5500),url(../img/3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.logo {
+  font-size: 20px;
+  color: #fff;
+  width: 100px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  background-color: red;
+  background-image: linear-gradient(to top, #974ec4 0%,#fff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fil-color: transparent;
+}
+.home-text{
+  text-align: center;
+   background-color: white;
+   background-image: linear-gradient(to top, #fff 0%, #63d2db 100%);
+   background-size: 100%;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fil-color: transparent;
+  padding-top: 180px;
+}
+.home-text h1{
+  font-size: 60px;
+   font-family: 'Kaushan Script', cursive;
+}
+.home-text p{
+  font-size: 20px;
+  font-style: italic;
+}
+.home-text h3{
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+.home-text h1 span{
+  font-size: 3rem;
+  color: red;
+}
+.deadline{
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-top: 30px;
+  font-weight: bolder;
+}
+.time{
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+/* invitation */
+#invitation {
+  width: 100%;
+  padding: 70px 0;
+  background-color:#C8A2C8;
+  position: relative;
+}
+.title-text{
+  text-align: center;
+  padding-bottom:  70px;
+}
+.title-text h5{
+  font-size: 30px;
+  margin: auto;
+  font-weight:bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  /* color: #fff; */
+   background-color: white;
+   background-image: linear-gradient(to top, #fff 0%, #CC5500 100%);
+   background-size: 100%;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fil-color: transparent;
+}
+.title-text p{
+  font-size: 15px;
+  font-style: italic;
+  margin: 20px;
+}
+.music{
+  position: absolute;
+  top: 70%;
+  left: 40%;
+ 
+}
+.music audio{
+  outline: none;
+ 
+}
+
+@media screen and (max-width: 600px){
+  .invite-img{
+    flex-basis: 100%;
+  }
+  .music{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+
+  }
+}
