@@ -195,14 +195,14 @@ body {
 
 
 /* story picture */
-/* #meet-us{
-  background:radial-gradient(rgba(0, 0, 0, 0.5), #CC5500),url(../img/11.jpg);
-    background-size: cover;
+#meet-us{
+  background:url(../img/cp26.jpg);
+    background-size: center;
     background-position: center;
     height: 100vh;
     text-align: center;
     font-size: 5rem;
-} */
+}
 
 /* our story */
 #our-story{
@@ -373,6 +373,42 @@ body {
 
 
 /* end of arragment */
+#photo{
+  width: 100%;
+  padding: 70px 0;
+  background-color: #eeffee;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.photo-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .col-4{ 
+  padding: 0px;
+  max-width:  300px;
+  margin: 0 0 50px 50px;
+} 
+.col-4 img{
+  width: 100%;
+  border-radius: 7px;
+  transition: all .5s;
+}
+.col-4 img:hover{
+  transform: scale(1.4);
+}
+@media screen and (max-width: 600px){
+  .photo-gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    /* margin-left: 10%; */
+  }
+}
+
 
 footer{
   background-color: #333;
