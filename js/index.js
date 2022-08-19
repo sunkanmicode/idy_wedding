@@ -286,6 +286,11 @@ const besties = [
   },
   {
     id: 12,
+    images: "./img/lady32.jpg",
+    name: "Joyce",
+  },
+  {
+    id: 12,
     images: "./img/lady31.jpg",
     name: "Didi",
   },
