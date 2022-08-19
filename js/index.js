@@ -342,7 +342,7 @@ const besties = [
   {
     id: 12,
     images: "./img/guy9.jpg",
-    name: "No name",
+    name: "Simon",
   },
   {
     id: 12,
