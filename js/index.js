@@ -25,6 +25,8 @@ const months = [
 const wedDate = document.querySelector('.wed-date');
 const outcome = document.querySelector('h3');
 const countDown = document.querySelectorAll('.time p');
+const deadline = document.querySelector(".deadline");
+
 
 
 const futureDate = new Date(2022, 7, 27, 10, 30, 0);
@@ -65,9 +67,24 @@ const getCountDownStart = () =>{
   
   
   const value = [days, hours, mins, secs];
+
+  
+  const format = (item) => {
+    if (item < 10) {
+      return (item = `0${item}`);
+    }
+    return item;
+  };
   countDown.forEach((item, index) =>{
-    return item.innerHTML = value[index]
+    return (item.innerHTML = (value[index]));
   })
+
+  if (countDate < 0) {
+    clearInterval(counter);
+    deadline.innerHTML = `<h1>Congraduations  <br> Mr and Mrs Ido Iberedem</h1>`;
+  }
+
+
   
   
 };
